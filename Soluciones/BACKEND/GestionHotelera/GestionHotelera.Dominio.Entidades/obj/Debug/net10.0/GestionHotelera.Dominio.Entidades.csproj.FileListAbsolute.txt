@@ -1,0 +1,12 @@
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\bin\Debug\net10.0\GestionHotelera.Dominio.Entidades.deps.json
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\bin\Debug\net10.0\GestionHotelera.Dominio.Entidades.dll
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\bin\Debug\net10.0\GestionHotelera.Dominio.Entidades.pdb
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\GestionHotelera.Dominio.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\GestionHotelera.Dominio.Entidades.AssemblyInfoInputs.cache
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\GestionHotelera.Dominio.Entidades.AssemblyInfo.cs
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\GestionHotelera.Dominio.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\GestionHotelera.Dominio.Entidades.sourcelink.json
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\GestionHotelera.Dominio.Entidades.dll
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\refint\GestionHotelera.Dominio.Entidades.dll
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\GestionHotelera.Dominio.Entidades.pdb
+C:\Users\cgallegos\Documents\Christian\Proyectos\GestionHotelera\Soluciones\BACKEND\GestionHotelera\GestionHotelera.Dominio.Entidades\obj\Debug\net10.0\ref\GestionHotelera.Dominio.Entidades.dll

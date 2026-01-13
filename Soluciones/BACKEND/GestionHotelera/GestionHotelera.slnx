@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/DOMAIN/">
+    <Project Path="GestionHotelera.Dominio.DTOs/GestionHotelera.Dominio.DTOs.csproj" Id="5ceed8b7-20b5-4511-acc6-d3d30f49bf4d" />
+    <Project Path="GestionHotelera.Dominio.Entidades/GestionHotelera.Dominio.Entidades.csproj" Id="c729384e-a6cd-428f-baf5-69472d8ed6f7" />
+  </Folder>
+  <Folder Name="/INFRAESTRUCTURA/">
+    <Project Path="GestionHotelera.Infraestructura.Datos/GestionHotelera.Infraestructura.Datos.csproj" Id="bd902ddc-4f48-4ca9-b4f1-469adaabb408" />
+  </Folder>
+  <Folder Name="/NEGOCIO/">
+    <Project Path="GestionHotelera.Negocio.Dominio/GestionHotelera.Negocio.Dominio.csproj" Id="77145f36-68d4-40d0-89ad-0e7da5cd98dd" />
+    <Project Path="GestionHotelera.Negocio.Interfaz/GestionHotelera.Negocio.Interfaz.csproj" Id="ccfa316b-69e9-49d3-9421-717b6b3eb9db" />
+  </Folder>
+  <Folder Name="/PRESENTACION/">
+    <Project Path="GestionHotelera.Api/GestionHotelera.Api.csproj" Id="2b19fb53-7dd6-43ed-b8e8-150004f3c968" />
+  </Folder>
+</Solution>

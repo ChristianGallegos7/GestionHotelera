@@ -1,0 +1,12 @@
+.vs/
+# Ignorar todos los archivos y carpetas de Terraform en cualquier parte del proyecto
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/crash.log
+**/override.tf
+**/override.tf.json
+**/*.tfplan
+**/*.tfstate*
+**/*.log
