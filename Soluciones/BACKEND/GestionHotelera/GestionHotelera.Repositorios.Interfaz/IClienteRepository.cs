@@ -22,8 +22,6 @@ namespace GestionHotelera.Repositorios.Interfaz
 
         Task<Cliente?> ObtenerConReservas(int idCliente);
 
-        Task<bool> Desactivar();
-
-        Task<bool> Activar();
+        Task<bool> CambiarEstado(int id, bool activo);
     }
 }

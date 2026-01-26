@@ -1,36 +1,91 @@
 ﻿using GestionHotelera.Dominio.Entidades;
+using GestionHotelera.Infraestructura.Data;
 using GestionHotelera.Repositorios.Interfaz;
+using Microsoft.EntityFrameworkCore;
 
 namespace GestionHotelera.Repositorios.Dominio
 {
     public class ClienteRepositoryImpl : IClienteRepository
     {
 
+        private readonly GestionHoteleraContext _context;
 
-        public Task<bool> Activar()
+        public ClienteRepositoryImpl(GestionHoteleraContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<Cliente> Actualizar(Cliente cliente)
+
+        public async Task<Cliente> Actualizar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            _context.Clientes.Update(cliente);
+            await _context.SaveChangesAsync();
+            return cliente;
         }
 
-        public Task<IEnumerable<Cliente>> BuscarPorNombre(string nombre)
+        public async Task<IEnumerable<Cliente>> BuscarPorNombre(string nombre)
         {
-            throw new NotImplementedException();
+            var cliente = await _context.Clientes
+                .Where(c => (c.PrimerNombre + " " + c.SegundoNombre + " " + c.PrimerApellido + " " + c.SegundoApellido).Contains(nombre))
+                .ToListAsync();
+            return cliente;
         }
 
-        public Task<Cliente> Crear(Cliente cliente)
+        public async Task<bool> CambiarEstado(int id, bool activo)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var cliente = await _context.Clientes.FirstOrDefaultAsync(c => c.Id == id);
+
+                if (cliente == null)
+                {
+                    return false;
+                }
+
+                if (cliente.EstaActivo == activo)
+                {
+                    return true;
+                }
+
+                cliente.EstaActivo = activo;
+                cliente.FechaUltimaModificacion = DateTime.UtcNow;
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al cambiar el estado del cliente", ex);
+            }
         }
 
-        public Task<bool> Desactivar()
+        public async Task<Cliente> Crear(Cliente cliente)
         {
-            throw new NotImplementedException();
+            var existeEmail = await ExisteCorreo(cliente.CorreoElectronico);
+
+            if (existeEmail)
+            {
+                throw new Exception("El correo electrónico ya está registrado.");
+            }
+            var existeDocumento = await ExisteDocumento(cliente.NumeroDocumento);
+
+            if (existeDocumento)
+            {
+                throw new Exception("El número de documento ya está registrado.");
+            }
+
+            cliente.FechaRegistro = DateTime.UtcNow;
+            cliente.EstaActivo = true;
+            cliente.EmailVerificado = false;
+
+            await _context.Clientes.AddAsync(cliente);
+            await _context.SaveChangesAsync();
+
+            return cliente;
+
         }
+
+
 
         public Task<bool> Eliminar(int id)
         {
@@ -39,12 +94,13 @@ namespace GestionHotelera.Repositorios.Dominio
 
         public Task<bool> ExisteCorreo(string correoElectronico)
         {
-            throw new NotImplementedException();
+            return _context.Clientes.AnyAsync(c => c.CorreoElectronico == correoElectronico);
+            
         }
 
         public Task<bool> ExisteDocumento(string numeroDocumento)
         {
-            throw new NotImplementedException();
+            return _context.Clientes.AnyAsync(c => c.NumeroDocumento == numeroDocumento);
         }
 
         public Task<(IEnumerable<Cliente> clientes, int total)> ListarTodosPaginado(int pagina, int registrosPorPagina)
@@ -52,24 +108,25 @@ namespace GestionHotelera.Repositorios.Dominio
             throw new NotImplementedException();
         }
 
-        public Task<Cliente?> ObtenerConReservas(int idCliente)
+        public async Task<Cliente?> ObtenerConReservas(int idCliente)
         {
-            throw new NotImplementedException();
+            return await _context.Clientes.Include(c => c.Reservas)
+                .FirstOrDefaultAsync(c => c.Id == idCliente);
         }
 
-        public Task<Cliente?> ObtenerPorCorreo(string correoElectronico)
+        public async Task<Cliente?> ObtenerPorCorreo(string correoElectronico)
         {
-            throw new NotImplementedException();
+            return await _context.Clientes.FirstOrDefaultAsync(c => c.CorreoElectronico == correoElectronico);
         }
 
-        public Task<Cliente?> ObtenerPorDocumento(string numeroDocumento)
+        public async Task<Cliente?> ObtenerPorDocumento(string numeroDocumento)
         {
-            throw new NotImplementedException();
+            return await _context.Clientes.FirstOrDefaultAsync(c => c.NumeroDocumento == numeroDocumento);
         }
 
-        public Task<Cliente?> ObtenerPorId(int id)
+        public async Task<Cliente?> ObtenerPorId(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Clientes.FirstOrDefaultAsync(c => c.Id == id);
         }
     }
 }

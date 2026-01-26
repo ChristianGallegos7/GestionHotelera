@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionHotelera.Repositorios.Interfaz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a9f1309cbf5bf809532f09c4f6b3295d0df1bbe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1759cb2b57fdb4a36652ec5d051bcdfb8e098371")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionHotelera.Repositorios.Interfaz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionHotelera.Repositorios.Interfaz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
