@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionHotelera.Dominio.DTOs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d16836162c7026f4688e79b101dd39c2b01ec5fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a9f1309cbf5bf809532f09c4f6b3295d0df1bbe")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionHotelera.Dominio.DTOs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionHotelera.Dominio.DTOs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
