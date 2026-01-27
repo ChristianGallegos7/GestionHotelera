@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionHotelera.Repositorios.Dominio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1759cb2b57fdb4a36652ec5d051bcdfb8e098371")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd7c8bb2e05e08de170d540263ed8dc60ff6232a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionHotelera.Repositorios.Dominio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionHotelera.Repositorios.Dominio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

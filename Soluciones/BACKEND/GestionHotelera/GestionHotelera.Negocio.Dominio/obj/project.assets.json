@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "GestionHotelera.Dominio.DTOs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/GestionHotelera.Dominio.DTOs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestionHotelera.Dominio.DTOs.dll": {}
+        }
+      },
+      "GestionHotelera.Negocio.Interfaz/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "GestionHotelera.Dominio.DTOs": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestionHotelera.Negocio.Interfaz.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestionHotelera.Negocio.Interfaz.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GestionHotelera.Dominio.DTOs/1.0.0": {
+      "type": "project",
+      "path": "../GestionHotelera.Dominio.DTOs/GestionHotelera.Dominio.DTOs.csproj",
+      "msbuildProject": "../GestionHotelera.Dominio.DTOs/GestionHotelera.Dominio.DTOs.csproj"
+    },
+    "GestionHotelera.Negocio.Interfaz/1.0.0": {
+      "type": "project",
+      "path": "../GestionHotelera.Negocio.Interfaz/GestionHotelera.Negocio.Interfaz.csproj",
+      "msbuildProject": "../GestionHotelera.Negocio.Interfaz/GestionHotelera.Negocio.Interfaz.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "GestionHotelera.Negocio.Interfaz >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\cgallegos\\.nuget\\packages\\": {},
@@ -39,7 +76,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Negocio.Interfaz\\GestionHotelera.Negocio.Interfaz.csproj": {
+              "projectPath": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Negocio.Interfaz\\GestionHotelera.Negocio.Interfaz.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

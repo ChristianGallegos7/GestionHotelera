@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/GestionHotelera.Dominio.DTOs.dll": {}
         }
+      },
+      "GestionHotelera.Dominio.Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/GestionHotelera.Dominio.Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestionHotelera.Dominio.Entidades.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../GestionHotelera.Dominio.DTOs/GestionHotelera.Dominio.DTOs.csproj",
       "msbuildProject": "../GestionHotelera.Dominio.DTOs/GestionHotelera.Dominio.DTOs.csproj"
+    },
+    "GestionHotelera.Dominio.Entidades/1.0.0": {
+      "type": "project",
+      "path": "../GestionHotelera.Dominio.Entidades/GestionHotelera.Dominio.Entidades.csproj",
+      "msbuildProject": "../GestionHotelera.Dominio.Entidades/GestionHotelera.Dominio.Entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "GestionHotelera.Dominio.DTOs >= 1.0.0"
+      "GestionHotelera.Dominio.DTOs >= 1.0.0",
+      "GestionHotelera.Dominio.Entidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +49,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Negocio.Interfaz\\GestionHotelera.Negocio.Interfaz.csproj",
-      "projectName": "GestionHotelera.Negocio.Interfaz",
-      "projectPath": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Negocio.Interfaz\\GestionHotelera.Negocio.Interfaz.csproj",
+      "projectUniqueName": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Dominio.Mappers\\GestionHotelera.Dominio.Mappers.csproj",
+      "projectName": "GestionHotelera.Dominio.Mappers",
+      "projectPath": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Dominio.Mappers\\GestionHotelera.Dominio.Mappers.csproj",
       "packagesPath": "C:\\Users\\cgallegos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Negocio.Interfaz\\obj\\",
+      "outputPath": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Dominio.Mappers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,6 +77,9 @@
           "projectReferences": {
             "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Dominio.DTOs\\GestionHotelera.Dominio.DTOs.csproj": {
               "projectPath": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Dominio.DTOs\\GestionHotelera.Dominio.DTOs.csproj"
+            },
+            "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Dominio.Entidades\\GestionHotelera.Dominio.Entidades.csproj": {
+              "projectPath": "C:\\Users\\cgallegos\\Documents\\Christian\\Proyectos\\GestionHotelera\\Soluciones\\BACKEND\\GestionHotelera\\GestionHotelera.Dominio.Entidades\\GestionHotelera.Dominio.Entidades.csproj"
             }
           }
         }

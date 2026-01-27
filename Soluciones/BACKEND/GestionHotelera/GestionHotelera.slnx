@@ -4,7 +4,9 @@
     <Project Path="GestionHotelera.Dominio.Entidades/GestionHotelera.Dominio.Entidades.csproj" Id="c729384e-a6cd-428f-baf5-69472d8ed6f7" />
   </Folder>
   <Folder Name="/INFRAESTRUCTURA/">
-    <Project Path="GestionHotelera.Infraestructura.Datos/GestionHotelera.Infraestructura.Datos.csproj" Id="bd902ddc-4f48-4ca9-b4f1-469adaabb408" />
+    <Project Path="GestionHotelera.Infraestructura.Data/GestionHotelera.Infraestructura.Data.csproj" Id="14179684-c764-4cb3-b9c9-21f454144d0b" />
+    <Project Path="GestionHotelera.Repositorios.Dominio/GestionHotelera.Repositorios.Dominio.csproj" Id="d5339166-903a-40aa-b961-cb40aed74642" />
+    <Project Path="GestionHotelera.Repositorios.Interfaz/GestionHotelera.Repositorios.Interfaz.csproj" Id="36993964-0596-4e0d-913f-f8578c5fbcfe" />
   </Folder>
   <Folder Name="/NEGOCIO/">
     <Project Path="GestionHotelera.Negocio.Dominio/GestionHotelera.Negocio.Dominio.csproj" Id="77145f36-68d4-40d0-89ad-0e7da5cd98dd" />

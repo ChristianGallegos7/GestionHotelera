@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GestionHotelera.Infraestructura.Data\GestionHotelera.Infraestructura.Data.csproj" />
+    <ProjectReference Include="..\GestionHotelera.Repositorios.Interfaz\GestionHotelera.Repositorios.Interfaz.csproj" />
+  </ItemGroup>
+
 </Project>

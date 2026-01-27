@@ -1,7 +1,4 @@
 ﻿using GestionHotelera.Dominio.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace GestionHotelera.Repositorios.Interfaz
 {

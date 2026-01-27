@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GestionHotelera.Dominio.DTOs\GestionHotelera.Dominio.DTOs.csproj" />
+  </ItemGroup>
+
 </Project>
